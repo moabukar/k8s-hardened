@@ -17,7 +17,7 @@ metadata:
 spec:
   podSelector:
     matchLabels:
-      app: k8s-security-demo
+      app: k8s-hardened
   ingress:
   - from:
     - namespaceSelector:
