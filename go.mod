@@ -1,3 +1,3 @@
-module github.com/ironcore864/k8s-security-demo
+module github.com/moabukar/k8s-hardened
 
-go 1.17
+go 1.21
