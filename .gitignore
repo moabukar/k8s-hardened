@@ -1,5 +1,5 @@
 # build binaries
-k8s-security-demo
+k8s-hardened
 
 # Terraform
 **/.terraform
