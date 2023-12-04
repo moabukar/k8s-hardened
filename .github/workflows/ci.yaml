@@ -14,12 +14,12 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2      
       - name: Build an image from Dockerfile
-        run: docker build -t ironcore864/k8s-security-demo:${{ github.sha }} .
+        run: docker build -t moabukar/k8s-hardened:${{ github.sha }} .
       
       - name: Run Trivy vulnerability scanner
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: 'docker.io/ironcore864/k8s-security-demo:${{ github.sha }}'
+          image-ref: 'docker.io/moabukar/k8s-hardened:${{ github.sha }}'
           format: 'table'
           exit-code: '1'
           ignore-unfixed: true
